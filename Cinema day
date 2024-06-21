@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int day,month,year,n;
+        day=s.nextInt();
+        month=s.nextInt();
+        year=s.nextInt();
+        n=s.nextInt();
+        int sum=day+month+year;
+        if((sum%12==0)&&(n>50||n<100))
+        {
+            System.out.println("Cinema Day");
+        }
+        else
+        {
+            System.out.println("Not a Cinema Day");
+        }
+        
+    }
+}
