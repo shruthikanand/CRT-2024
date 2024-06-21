@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,b,c;
+        b=s.nextInt();
+        a=s.nextInt();
+        c=s.nextInt();
+        int aw,cw;
+        aw=a*75;
+        cw=c*30;
+        int total=aw+cw;
+        if(total>b)
+        {
+            System.out.println("Boat will drown");
+        }
+        else
+        {
+            System.out.println("Boat is stable");
+        }
+    }
+}
