@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a;
+        a=s.nextInt();
+        if(a<100||a>200)
+        {
+            System.out.println("INVALID INPUT");
+        }
+        else
+        {
+            int b=a/4;
+            int c= b+a%4;
+                System.out.println(b);
+            System.out.println(b);
+            System.out.println(b);
+            System.out.println(c);
+        }
+    }
+}
