@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int bill;
+        int r,sum=0;
+        bill=s.nextInt();
+        while(bill>1)
+        {
+            r=bill%10;
+            if(r%2==1)
+            {
+                sum=sum+r;
+            }
+            bill=bill/10;
+        }
+        System.out.println(sum);
+    }
+}
