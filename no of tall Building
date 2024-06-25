@@ -11,17 +11,17 @@ for(int i=0;i<n;i++)
 {
   a[i]=s.nextInt();
 }
-int c=0;
-for(int i=0;i<n;i++)
-{
-  for(int j=i+1;j<n-1;j++)
+int c=1;
+int large=a[0];
+for(int i=1;i<n;i++)
   {
-    if(a[i]>a[j])
+    if(large<a[i])
     {
-       c=c+1;
-     }
+
+      c++;  
+       large=a[i];
+   }
   }
-}
 System.out.println(c);
 }
 }
