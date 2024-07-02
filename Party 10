@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int e[]=new int[n];
+        int l[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            e[i]=s.nextInt();
+        }
+         for(int i=0;i<n;i++)
+        {
+            l[i]=s.nextInt();
+        }
+        int currentGuest=0;
+        int maxGuest=0;
+         for(int i=0;i<n;i++)
+        {
+            currentGuest+=e[i];
+             currentGuest-=l[i];
+             if(currentGuest>maxGuest)
+             {
+                 maxGuest=currentGuest;
+             }
+        }
+        System.out.println(maxGuest);
+    }
+}
